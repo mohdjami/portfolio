@@ -92,7 +92,6 @@ export function Hero() {
   return (
     <main className="mt-32">
       <TracingBeam>
-        {" "}
         <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5">
           <div className="h-auto w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="font-bold font-sans text- md:text-4xl lg:text-4xl dark:text-neutral-200 ">

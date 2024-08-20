@@ -1,261 +1,131 @@
-import Link from "next/link";
-import { JSX, SVGProps } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CodeIcon, GlobeIcon, SearchIcon, BookOpenIcon } from "lucide-react";
 
 export default function Services() {
-  return (
-    <div className="flex flex-col h-auto lg:min-h-[100dvh] m-32">
-      <main className="flex-1">
-        <section className="w-full pt-12 md:pt-24 lg:pt-32">
-          <div className="container space-y-10 xl:space-y-16">
-            <div className="grid gap-4 px-10 md:grid-cols-2 md:gap-16">
-              <div>
-                <h1 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
-                  Comprehensive Services for Your Online Success
-                </h1>
-              </div>
-              <div className="flex flex-col items-start space-y-4">
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  We offer a wide range of services to help you achieve your
-                  online goals, from SEO optimization to cutting-edge frontend
-                  and backend development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
-            <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
-                  SEO Services
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Unlock Your Online Potential with Our SEO Expertise
-                </h2>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our SEO services include comprehensive keyword research,
-                  on-page optimization, link building, and advanced analytics
-                  tracking. We&apos;ve helped numerous clients achieve top
-                  rankings and drive more qualified traffic to their websites.
-                </p>
-                <ul className="grid gap-2 py-4">
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Keyword Research and Targeting
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    On-Page Optimization
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Link Building and Outreach
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Analytics and Reporting
-                  </li>
-                </ul>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Contact Us
-                  </Link>
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    New Link
-                  </Link>
-                </div>
-              </div>
-              <img
-                src="/placeholder.svg"
-                width="550"
-                height="310"
-                alt="SEO Services"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-              <img
-                src="/placeholder.svg"
-                width="550"
-                height="310"
-                alt="Frontend Development"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-              />
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
-                  Frontend Development
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Elevate Your Online Presence with Cutting-Edge Frontend
-                </h2>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our frontend development team specializes in creating visually
-                  stunning and highly interactive user interfaces. We leverage
-                  modern frameworks and libraries like React, Vue, and Angular
-                  to deliver responsive, optimized, and user-friendly
-                  experiences.
-                </p>
-                <ul className="grid gap-2 py-4">
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Responsive Design and Development
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    UI/UX Optimization
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Modern Framework Integration
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Accessibility and Performance
-                  </li>
-                </ul>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
-            <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
-                  Backend and Full-Stack Development
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Unleash the Power of Scalable and Secure Applications
-                </h2>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our backend and full-stack development services cover
-                  everything from API design and database management to
-                  server-side logic and seamless integration of frontend and
-                  backend components. We build scalable and secure applications
-                  that deliver exceptional performance and reliability.
-                </p>
-                <ul className="grid gap-2 py-4">
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    API Design and Development
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Database Management and Integration
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Server-Side Logic and Optimization
-                  </li>
-                  <li>
-                    <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                    Frontend and Backend Integration
-                  </li>
-                </ul>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Learn More
-                  </Link>
-                  <Link
-                    href="#"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-              <img
-                src="/placeholder.svg"
-                width="550"
-                height="310"
-                alt="Backend and Full-Stack Development"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-  );
-}
+  const services = [
+    {
+      title: "Frontend Development",
+      description:
+        "Crafting beautiful, responsive, and user-friendly interfaces that engage and delight users.",
+      icon: <GlobeIcon className="w-10 h-10 mb-4 text-primary" />,
+      skills: [
+        "React",
+        "Vue.js",
+        "Next.js",
+        "Tailwind CSS",
+        "JavaScript",
+        "TypeScript",
+      ],
+      details:
+        "From single-page applications to complex web platforms, I bring designs to life with clean, efficient code. My expertise in modern frameworks ensures fast, scalable, and maintainable frontend solutions.",
+    },
+    {
+      title: "Backend Development",
+      description:
+        "Building robust, scalable server-side applications and APIs to power your web solutions.",
+      icon: <CodeIcon className="w-10 h-10 mb-4 text-primary" />,
+      skills: [
+        "Node.js",
+        "Python",
+        "Django",
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Kafka",
+        "AWS",
+        "Supabase",
+      ],
+      details:
+        "I specialize in creating high-performance backends that handle complex business logic, data management, and third-party integrations. My solutions are designed for scalability, security, and efficiency.",
+    },
+    {
+      title: "Search Engine Optimization (SEO)",
+      description:
+        "Optimizing your web presence to improve visibility and drive organic traffic to your site.",
+      icon: <SearchIcon className="w-10 h-10 mb-4 text-primary" />,
+      skills: [
+        "Keyword Research",
+        "On-Page SEO",
+        "Technical SEO",
+        "Link Building",
+        "Content Strategy",
+      ],
+      details:
+        "I employ white-hat SEO techniques to boost your search engine rankings. From technical optimizations to content strategy, I'll help your website climb the SERP ladder and attract more qualified leads.",
+    },
+    {
+      title: "Web Development Teaching",
+      description:
+        "Sharing knowledge and empowering aspiring developers through comprehensive training and mentorship.",
+      icon: <BookOpenIcon className="w-10 h-10 mb-4 text-primary" />,
+      skills: [
+        "Curriculum Development",
+        "One-on-One Mentoring",
+        "Workshop Facilitation",
+        "Code Reviews",
+      ],
+      details:
+        "With a passion for education, I offer tailored teaching services for individuals and groups. From beginners to advanced developers, I provide hands-on training, project-based learning, and ongoing support to help you achieve your coding goals.",
+    },
+  ];
 
-function CheckIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
-  );
-}
-
-function MountainIcon(
-  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
-) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
+    <section className="w-full bg-muted ">
+      <div className="lg:m-32 px-4 mt-28">
+        <div className="flex flex-col items-left lg:items-center mr-12 lg:mr-0 my-10  lg:m-12 justify-left lg:justify-center space-y-4 lg:text-center text-left">
+          <h2 className="text-3xl font-bold text-left tracking-tighter sm:text-5xl">
+            My Services
+          </h2>
+          <p className="lg:smax-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-left">
+            Comprehensive web solutions tailored to your needs. From frontend to
+            backend, SEO to education, I've got you covered.
+          </p>
+        </div>
+        <div className="grid gap-6 mr-12 lg:mr-0 lg:m-12 md:grid-cols-2 lg:grid-cols-2">
+          {services.map((service, index) => (
+            <Card
+              key={index}
+              className="group relative overflow-hidden transition-all hover:shadow-lg"
+            >
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  {service.icon}
+                  <Badge variant="secondary" className="text-sm">
+                    {service.skills.length} Skills
+                  </Badge>
+                </div>
+                <CardTitle className="text-2xl font-bold">
+                  {service.title}
+                </CardTitle>
+                <CardDescription>{service.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">{service.details}</p>
+                <div className="flex flex-wrap gap-2">
+                  {service.skills.map((skill, skillIndex) => (
+                    <Badge key={skillIndex} variant="outline">
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity group-hover:opacity-100">
+                <span className="text-white text-lg font-semibold">
+                  Learn More
+                </span>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

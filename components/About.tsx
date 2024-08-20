@@ -6,7 +6,7 @@ export default function About() {
           <h5 className="font-bold text-lg mb-4 lg:text-left text-center">
             GENERAL
           </h5>
-          <ul className="space-y-2 lg:text-left text-center lg:text-left text-center">
+          <ul className="space-y-2 lg:text-left text-center ">
             <li>
               <a className="hover:underline" href="/">
                 Home
