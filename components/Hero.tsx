@@ -85,7 +85,7 @@ export function Hero() {
       text: " Scalable",
     },
     {
-      text: "Applications...",
+      text: "Applications.",
       className: "text-red-500 dark:text-red-500",
     },
   ];
