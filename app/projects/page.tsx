@@ -21,9 +21,9 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import Image from "next/image";
 const Hello = () => {
   return (
-    <section className="lg:m-32 mt-32 " id="back-end">
+    <section className="lg:m-32 mt-32 bg-transparent" id="back-end">
       <TracingBeam>
-        <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <div className="h-full relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
           <div className="text-black lg:mt-10 font-bold font-sans lg:text-4xl dark:text-white">
             Selection of My Favourite Projects
           </div>
