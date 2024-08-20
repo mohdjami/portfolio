@@ -7,7 +7,7 @@ export function AboutPage() {
         <div className="relative w-[300px] h-[300px]">
           <div className="rounded-full p-1 bg-gradient-to-r from-black to-red-500">
             <Image
-              src="/linkedin-removebg-preview2.jpg"
+              src="/jami.jpg"
               alt="Mohd Jami"
               width={500}
               height={500}

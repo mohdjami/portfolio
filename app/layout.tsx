@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import About from "@/components/About";
 import { FloatingNav } from "@/components/floating-nav";
 import Sidebar from "@/components/Sidebar";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,33 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Head>
+          <title>Mohd Jami Portfolio</title>
+          <meta
+            name="description"
+            content="Mohd Jami Portfolio made using Next.js"
+          />
+          <meta
+            name="keywords"
+            content="Mohd Jami, Portfolio, Next.js, Web Developer"
+          />
+          <meta property="og:title" content="Mohd Jami Portfolio" />
+          <meta
+            property="og:description"
+            content="Mohd Jami Portfolio made using Next.js"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://mohdjami.me" />
+          <meta property="og:image" content="https://mohdjami.me/jami.jpg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Mohd Jami Portfolio" />
+          <meta
+            name="twitter:description"
+            content="Mohd Jami Portfolio made using Next.js"
+          />
+          <meta name="twitter:image" content="https://mohdjami.me/jami.jpg" />
+          <link rel="canonical" href="https://mohdjami.me" />
+        </Head>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {" "}
           <FloatingNav navItems={navItems} />
