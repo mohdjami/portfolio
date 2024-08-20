@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Sidebar() {
   return (
-    <div className="fixed right-0 flex flex-col gap-4 py-4 w-[100px]">
+    <div className="fixed right-0 lg:fixed top-10 flex flex-col gap-4 lg:py-4 lg:w-[100px] z-50">
       <nav className="grid gap-2">
         <Link
           href="https://github.com/MohdJami"

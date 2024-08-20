@@ -4,10 +4,15 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Boxes } from "@/components/ui/background-boxes";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { dashboardLinks } from "@/config/links";
+import { Metadata } from "next";
 
 interface ProjectDashboardLayoutProps {
   children: React.ReactNode;
 }
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Projects Section",
+};
 
 export default async function ProjectDashboardLayout({
   children,

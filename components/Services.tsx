@@ -15,9 +15,9 @@ export default function Services() {
               </div>
               <div className="flex flex-col items-start space-y-4">
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Our team of experts offers a wide range of services to help
-                  you achieve your online goals, from SEO optimization to
-                  cutting-edge frontend and backend development.
+                  We offer a wide range of services to help you achieve your
+                  online goals, from SEO optimization to cutting-edge frontend
+                  and backend development.
                 </p>
               </div>
             </div>

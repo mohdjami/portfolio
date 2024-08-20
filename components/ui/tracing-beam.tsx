@@ -49,9 +49,9 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-auto max-w-7xl mx-auto h-full", className)}
+      className={cn("relative w-auto max-w-7xl mx-auto h-auto", className)}
     >
-      <div className="absolute -left-4 md:-left-20 top-10">
+      <div className="fixed lg:absolute -left-1 lg:-left-4 md:-left-20 top-0">
         <motion.div
           transition={{
             duration: 0.2,
@@ -61,14 +61,14 @@ export const TracingBeam = ({
             boxShadow:
               scrollYProgress.get() > 0
                 ? "none"
-                : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                : "rgba(0, 0, 0, 0.24) 0px 3px 4px",
           }}
-          className="ml-[27px] mt-[100px] h-4 w-4 rounded-full border border-netural-600 shadow-sm flex items-center justify-center"
+          className="ml-[27px] mt-[50px] h-4 w-4 rounded-full border-2 border-netural-600 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
-              duration: 0.2,
-              delay: 0.5,
+              duration: 0.5,
+              delay: 0.1,
             }}
             animate={{
               backgroundColor:
@@ -88,7 +88,7 @@ export const TracingBeam = ({
           aria-hidden="true"
         >
           <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
+            d={`M 1 0V -36 l 18 24 V ${svgHeight * 2} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="red-6"
             strokeOpacity="0.16"
