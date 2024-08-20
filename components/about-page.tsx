@@ -31,7 +31,7 @@ export function AboutPage() {
         <h3 className="flex justify-center items-center text-2xl font-bold tracking-tight text-primary-foreground">
           Key Skills & Experience
         </h3>
-        <div className="grid grid-cols-4 gap-4 mt-4">
+        <div className="grid lg:grid-cols-4 gap-4 mt-4">
           <div className="p-4 bg-slate-600 rounded-md">
             <h4 className="text-lg font-semibold text-primary-foreground">
               Front-end

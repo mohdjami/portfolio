@@ -3,7 +3,7 @@ import { JSX, SVGProps } from "react";
 
 export default function Services() {
   return (
-    <div className="flex flex-col min-h-[100dvh] m-32">
+    <div className="flex flex-col h-auto lg:min-h-[100dvh] m-32">
       <main className="flex-1">
         <section className="w-full pt-12 md:pt-24 lg:pt-32">
           <div className="container space-y-10 xl:space-y-16">
