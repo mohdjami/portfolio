@@ -36,8 +36,8 @@ export default function Services() {
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our SEO services include comprehensive keyword research,
                   on-page optimization, link building, and advanced analytics
-                  tracking. We've helped numerous clients achieve top rankings
-                  and drive more qualified traffic to their websites.
+                  tracking. We&apos;ve helped numerous clients achieve top
+                  rankings and drive more qualified traffic to their websites.
                 </p>
                 <ul className="grid gap-2 py-4">
                   <li>
