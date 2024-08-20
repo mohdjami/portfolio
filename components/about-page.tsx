@@ -4,7 +4,7 @@ export function AboutPage() {
   return (
     <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-32">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 border-2 p-10">
-        <div className="relative w-[300px] h-[300px]">
+        <div className="relative lg:w-[300px] lg:h-[300px]">
           <div className="rounded-full p-1 bg-gradient-to-r from-black to-red-500">
             <Image
               src="/jami.jpg"
@@ -31,7 +31,7 @@ export function AboutPage() {
         <h3 className="flex justify-center items-center text-2xl font-bold tracking-tight text-primary-foreground">
           Key Skills & Experience
         </h3>
-        <div className="grid lg:grid-cols-4 gap-4 mt-4">
+        <div className="grid lg:grid-cols-4 gap-4 mt-4 m-4 ">
           <div className="p-4 bg-slate-600 rounded-md">
             <h4 className="text-lg font-semibold text-primary-foreground">
               Front-end
