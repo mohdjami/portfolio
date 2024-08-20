@@ -59,7 +59,7 @@ export default function Services() {
         "Content Strategy",
       ],
       details:
-        "I employ white-hat SEO techniques to boost your search engine rankings. From technical optimizations to content strategy, I'll help your website climb the SERP ladder and attract more qualified leads.",
+        "I employ white-hat SEO techniques to boost your search engine rankings. From technical optimizations to content strategy, I&apos;ll help your website climb the SERP ladder and attract more qualified leads.",
     },
     {
       title: "Web Development Teaching",
@@ -86,7 +86,7 @@ export default function Services() {
           </h2>
           <p className="lg:smax-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-left">
             Comprehensive web solutions tailored to your needs. From frontend to
-            backend, SEO to education, I've got you covered.
+            backend, SEO to education, I&apos;ve got you covered.
           </p>
         </div>
         <div className="grid gap-6 mr-12 lg:mr-0 lg:m-12 md:grid-cols-2 lg:grid-cols-2">
