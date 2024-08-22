@@ -10,7 +10,7 @@ export const dashboardLinks: Navigation = {
     {
       title: "Projects",
       href: "/projects",
-      icon: "check",
+      icon: "activity",
     },
     {
       title: "Backend Projects",

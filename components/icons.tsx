@@ -20,7 +20,7 @@ import {
   BsSun,
 } from "react-icons/bs";
 import { RiNextjsFill } from "react-icons/ri";
-import { FaSort, FaReact, FaUserAlt, FaHome } from "react-icons/fa";
+import { FaSort, FaReact, FaUserAlt, FaHome, FaNodeJs } from "react-icons/fa";
 import { ImSpinner8, ImStatsBars } from "react-icons/im";
 import { DiNodejs } from "react-icons/di";
 import { LuSettings } from "react-icons/lu";
@@ -42,7 +42,7 @@ const icons = {
   dashboard: RxDashboard,
   activity: BsActivity,
   settings: LuSettings,
-  backend: DiNodejs,
+  backend: FaNodeJs,
   fullstack: RiNextjsFill,
   frontend: FaReact,
   others: MdSkipNext,
