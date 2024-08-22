@@ -30,7 +30,7 @@ export const dashboardLinks: Navigation = {
     },
     {
       title: "Other Projects",
-      href: "/projects/other-end",
+      href: "/projects/others",
       icon: "ellipsis",
     },
   ],

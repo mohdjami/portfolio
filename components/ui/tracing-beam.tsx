@@ -45,6 +45,7 @@ export const TracingBeam = ({
       damping: 90,
     }
   );
+  console.log(svgHeight);
 
   return (
     <motion.div
@@ -63,7 +64,7 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 4px",
           }}
-          className="ml-[27px] mt-[50px] h-4 w-4 rounded-full border-2 border-netural-600 shadow-sm flex items-center justify-center"
+          className="ml-[27px] mt-[50px] lg:h-4 lg:w-4 h-2 w-2 rounded-full border-2 border-netural-600 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
@@ -76,7 +77,7 @@ export const TracingBeam = ({
               borderColor:
                 scrollYProgress.get() > 0 ? "white" : "var(--red-600)",
             }}
-            className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
+            className="lg:h-2 lg:w-2 h-1 w-1  rounded-full border border-neutral-300 bg-white"
           />
         </motion.div>
 
@@ -84,7 +85,7 @@ export const TracingBeam = ({
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
           height={svgHeight} // Set the SVG height
-          className=" ml-4 block"
+          className="ml-4 block"
           aria-hidden="true"
         >
           <motion.path
@@ -103,7 +104,7 @@ export const TracingBeam = ({
             strokeWidth="1.25"
             className="motion-reduce:hidden"
             transition={{
-              duration: 10,
+              duration: 20,
             }}
           ></motion.path>
           <defs>
@@ -117,8 +118,8 @@ export const TracingBeam = ({
             >
               <stop stopColor="red" stopOpacity="0"></stop>
               <stop stopColor="red"></stop>
-              <stop offset="0.325" stopColor="red-700"></stop>
-              <stop offset="1" stopColor="red-700" stopOpacity="0"></stop>
+              <stop offset="1" stopColor="red-700"></stop>
+              <stop offset="2" stopColor="red-700" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>
