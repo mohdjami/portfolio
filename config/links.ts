@@ -5,7 +5,7 @@ export const dashboardLinks: Navigation = {
     {
       title: "Home",
       href: "/",
-      icon: "dashboard",
+      icon: "home",
     },
     {
       title: "Projects",
@@ -15,18 +15,18 @@ export const dashboardLinks: Navigation = {
     {
       title: "Backend Projects",
       href: "/projects/back-end",
-      icon: "fire",
+      icon: "backend",
     },
     {
       title: "Full Stack Projects",
       href: "/projects/full-stack",
-      icon: "sort",
+      icon: "fullstack",
     },
 
     {
       title: "Front-End Projects",
       href: "/projects/front-end",
-      icon: "mixer",
+      icon: "frontend",
     },
     {
       title: "Other Projects",

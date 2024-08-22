@@ -6,6 +6,7 @@ import {
   AiOutlinePlus,
   AiOutlineWarning,
 } from "react-icons/ai";
+import { MdSkipNext } from "react-icons/md";
 import { BiCalendar, BiHistory } from "react-icons/bi";
 import {
   BsActivity,
@@ -18,8 +19,10 @@ import {
   BsMoonStars,
   BsSun,
 } from "react-icons/bs";
-import { FaSort, FaUserAlt } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaSort, FaReact, FaUserAlt, FaHome } from "react-icons/fa";
 import { ImSpinner8, ImStatsBars } from "react-icons/im";
+import { DiNodejs } from "react-icons/di";
 import { LuSettings } from "react-icons/lu";
 import { MdDeleteForever, MdOutlineLogout } from "react-icons/md";
 import { RxDashboard, RxMixerHorizontal } from "react-icons/rx";
@@ -39,7 +42,11 @@ const icons = {
   dashboard: RxDashboard,
   activity: BsActivity,
   settings: LuSettings,
-
+  backend: DiNodejs,
+  fullstack: RiNextjsFill,
+  frontend: FaReact,
+  others: MdSkipNext,
+  home: FaHome,
   // Mode Toggle
   moon: BsMoonStars,
   sun: BsSun,
