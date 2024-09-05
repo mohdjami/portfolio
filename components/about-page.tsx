@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function AboutPage() {
   return (
-    <div className="lg:m-32 px-8 mt-28">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 border-2 p-10">
+    <div className="lg:m-32 px-8 mt-28 mx-4">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 border-2 p-10 rounded-lg">
         <div className="relative lg:w-[300px] lg:h-[300px]">
           <div className="rounded-full p-1 bg-gradient-to-r from-black to-red-500">
             <Image
@@ -19,7 +19,7 @@ export function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tight text-primary-foreground">
             About Mohd Jami
           </h2>
-          <p className="mt-4 text-xl text-muted-foreground">
+          <p className="mt-4 lg:text-xl text-muted-foreground">
             Mohd Jami is a Backend Developer with experience in the building
             Scalable and Robust Backend Systems. He has a strong background in
             full-stack web development, specializing in building scalable and

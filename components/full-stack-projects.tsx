@@ -48,7 +48,7 @@ const items = [
     title: "URL Shortener",
     description:
       "Created a lightning fast URL Shortener with Nextjs and implemented caching using Redis and Message queues Kafka for asynchronously sending E-mails.",
-    image: "/url.png",
+    image: "url.png",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/url-shortener",
     tech: "Nextjs, Redis, Kafka, Prisma, Postgres, Typescript",
@@ -60,7 +60,7 @@ const items = [
     description:
       "With our app, you can explore new music, create playlists, and share your favourite tunes with friends. Get started today!  ",
     header: <Skeleton />,
-    image: "/Screenshot 2024-04-18 160305.png",
+    image: "Screenshot 2024-04-18 160305.png",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/favourite-tunes",
     tech: "Next.js, Nodejs, Postgres, Prisma ",
@@ -71,7 +71,7 @@ const items = [
     description:
       "Monitor your activities, streaks, and progress with little effort. Integrate statistics to your life! ",
     header: <Skeleton />,
-    image: "/Screenshot 2024-02-15 211545.png",
+    image: "Screenshot 2024-02-15 211545.png",
 
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/habit-tracker-app",
