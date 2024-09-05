@@ -54,14 +54,14 @@ export const BentoGridItem = ({
             {image ? (
               <>
                 <Image
-                  src={image}
+                  src={`/${image}`}
                   alt="My URL shortener Website"
                   width={300}
                   height={300}
                   className="hidden lg:block"
                 />
                 <Image
-                  src={image}
+                  src={`/${image}`}
                   alt="My URL shortener Website"
                   width={300}
                   height={300}
@@ -72,7 +72,6 @@ export const BentoGridItem = ({
               <Skeleton />
             )}
             <div className="group-hover/bento:translate-x-2  transition duration-200">
-              {icon}
               <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
                 {title}
               </div>

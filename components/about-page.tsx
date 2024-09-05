@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutPage() {
   return (
-    <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 mt-32">
+    <div className="lg:m-32 px-8 mt-28">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 border-2 p-10">
         <div className="relative lg:w-[300px] lg:h-[300px]">
           <div className="rounded-full p-1 bg-gradient-to-r from-black to-red-500">

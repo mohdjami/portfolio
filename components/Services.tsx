@@ -79,7 +79,7 @@ export default function Services() {
 
   return (
     <section className="w-full bg-muted ">
-      <div className="lg:m-32 px-4 mt-28">
+      <div className="lg:m-32 px-8 mt-28">
         <div className="flex flex-col items-left lg:items-center mr-12 lg:mr-0 my-10  lg:m-12 justify-left lg:justify-center space-y-4 lg:text-center text-left">
           <h2 className="text-3xl font-bold text-left tracking-tighter sm:text-5xl">
             My Services

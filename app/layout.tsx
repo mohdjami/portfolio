@@ -66,9 +66,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {" "}
           <FloatingNav navItems={navItems} />
-          <Sidebar />
-          {/* <Navbar /> */}
-          {children}
+          <Sidebar /> {children}
           <About />
         </ThemeProvider>
       </body>

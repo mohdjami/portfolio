@@ -1,5 +1,4 @@
 import { Navigation } from "@/types";
-
 export const dashboardLinks: Navigation = {
   data: [
     {

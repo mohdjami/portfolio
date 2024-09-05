@@ -11,7 +11,7 @@ import { ProjectCards } from "./project-card";
 import { TextGenerateEffect } from "./text-generate-effect";
 import Link from "next/link";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
-import { TracingBeam } from "./ui/tracing-beam";
+import { TracingBeam, TracingBeam2 } from "./ui/tracing-beam";
 import Image from "next/image";
 import Sidebar from "./Sidebar";
 
@@ -92,7 +92,7 @@ export function Hero() {
   return (
     <main className="mt-32">
       {" "}
-      <TracingBeam>
+      <TracingBeam2>
         <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5">
           <div className="h-auto w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="font-bold font-sans text- md:text-4xl lg:text-4xl dark:text-neutral-200   h-[250px]">
@@ -194,7 +194,7 @@ export function Hero() {
             </Link>
           </div>
         </section>
-      </TracingBeam>
+      </TracingBeam2>
     </main>
   );
 }
