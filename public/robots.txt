@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+
+# Host
+Host: https://mohdjami.me
+
+# Sitemaps
+Sitemap: https://mohdjami.me/sitemap.xml
