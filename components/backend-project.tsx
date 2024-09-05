@@ -1,17 +1,7 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
-
 export async function BackendProjects() {
-  const result = await fetch("http://localhost:3000/api/notion/backend", {
+  const result = await fetch("https://mohdjami.me/api/notion/backend", {
     method: "GET",
     headers: {
       "Content-Type": "application",
