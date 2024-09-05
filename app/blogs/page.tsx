@@ -83,7 +83,7 @@ export default function BlogPage() {
                 </CardContent>
                 <CardFooter>
                   <Link
-                    href={`/blog/${post.slug}`}
+                    href={`/blogs/${post.slug}`}
                     className="text-primary hover:underline font-medium"
                     aria-label={`Read more about ${post.title}`}
                   >
