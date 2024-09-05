@@ -1,12 +1,15 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 export async function BackendProjects() {
-  const result = await fetch("https://mohdjami.me/api/notion/backend", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application",
-    },
-  });
+  const result = await fetch(
+    `${process.env.NEXT_PUBLIC_URL}/api/notion/backend`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application",
+      },
+    }
+  );
   const itemss: any = [];
   const data = await result.json();
   // console.log("data", data.results);
@@ -30,25 +33,24 @@ export async function BackendProjects() {
           BACKEND PROJECTS
         </div>
 
-        <BentoGrid className="max-w-4xl my-10   mx-auto">
-          {itemss.map((item: any, i: number) => (
-            <BentoGridItem
-              key={i}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              icon={item.icon}
-              github={item.github}
-              live={item.live}
-              tech={item.tech}
-              className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-            />
-          ))}
-        </BentoGrid>
+        {itemss && (
+          <BentoGrid className="max-w-4xl my-10   mx-auto">
+            {itemss.map((item: any, i: number) => (
+              <BentoGridItem
+                key={i}
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                icon={item.icon}
+                github={item.github}
+                live={item.live}
+                tech={item.tech}
+                className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+              />
+            ))}
+          </BentoGrid>
+        )}
       </div>
     </section>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
