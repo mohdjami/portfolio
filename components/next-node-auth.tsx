@@ -3,6 +3,7 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import Link from "next/link";
 
 export default function NextNodeAuth() {
   const sections = [
@@ -53,9 +54,9 @@ export default function NextNodeAuth() {
               backend, implementing a robust authentication system can be
               challenging due to the different behaviors of server components,
               client components, and route handlers in Next.js. A regular
-              approach won't suffice. In this post, we'll explore how to use
-              cookies with JWT for secure authentication, addressing common
-              pitfalls and best practices.
+              approach won&apos;t suffice. In this post, we&apos;ll explore how
+              to use cookies with JWT for secure authentication, addressing
+              common pitfalls and best practices.
             </p>
 
             <Card className="my-6 p-4 bg-muted">
@@ -63,7 +64,7 @@ export default function NextNodeAuth() {
               <p className="text-sm sm:text-base">
                 This article assumes you have a good understanding of Next.js
                 and Node.js and can code full-stack applications from scratch.
-                However, I'll briefly cover the fundamentals and provide
+                However, I&apos;ll briefly cover the fundamentals and provide
                 insights into my strategies for authentication, authorization,
                 and communication between the frontend and backend, focusing on
                 handling cookies in client components, server components, and
@@ -137,7 +138,8 @@ export default function NextNodeAuth() {
               <li>
                 <strong>Protection against CSRF attacks</strong>: HttpOnly
                 cookies mitigate CSRF risks with the SameSite flag and anti-CSRF
-                tokens. Local storage doesn't offer built-in CSRF protection.
+                tokens. Local storage doesn&apos;t offer built-in CSRF
+                protection.
               </li>
               <li>
                 <strong>Session management</strong>: Cookies handle session
@@ -171,18 +173,25 @@ export default function NextNodeAuth() {
                 token theft.
               </li>
               <li>
-                <strong>Separate Backend Communication</strong>: We'll address
-                the challenges of authenticating requests between a separate
-                Express backend and a Next.js application.
+                <strong>Separate Backend Communication</strong>: We will discuss
+                the challenges of authenticating requests from a separate
+                Express backend to a Next.js application. The challenge lies in
+                managing cookie-based authentication across client-side and
+                server-side boundaries, as cookies may not be automatically
+                passed in certain requests.
               </li>
               <li>
-                <strong>API Proxies</strong>: Use API proxies to manage
-                authentication when making requests from client components to
-                external services. This ensures cookies are correctly passed.
+                <strong>API Proxies</strong>: API proxies work by creating a
+                middle layer that allows Next.js to intercept and forward
+                requests to the backend. This ensures that cookies are correctly
+                attached and sent with the request, as the proxy route runs
+                within the same origin. We’ll explore the concept of API proxies
+                as a solution for handling authentication when making requests
+                to external services from client Components.
               </li>
             </ul>
 
-            <Card className="my-6 p-4 bg-muted overflow-hidden">
+            <Card className="my-6 p-4 bg-muted overflow-hidden" id="apiproxy">
               <SyntaxHighlighter
                 language="javascript"
                 style={atomDark}
@@ -238,12 +247,21 @@ export async function logout() {
             <ul className="list-disc pl-6 mb-4 space-y-2">
               <li>
                 <strong>Cookie Accessibility</strong>: Cookies are not
-                automatically sent with requests from Next.js to external
-                services.
+                automatically sent with requests from Next.js to an external
+                service. This makes it difficult for the backend to verify the
+                request without the token. But if you are sending request to
+                route handlers within the same Next.js server from client
+                components, you don&apos;t face this problem. As cookies are
+                httpOnly, you can&apos;t excess cookies in any way in client
+                side, so you won’t be explicitly able to send them too.
               </li>
               <li>
-                <strong>Server-Side Component Requests</strong>: Cookies must be
-                explicitly included in server-side fetch requests.
+                <strong>Server-Side Component Requests</strong>: When making
+                requests from server-side components using fetch, cookies are
+                not automatically included in the request headers, as we
+                discussed above. For this, you need to explicitly put the
+                cookies in request headers. We will talk about this in a later
+                section.
               </li>
               <li>
                 <strong>Client-Side vs. Server-Side Requests</strong>:
@@ -257,7 +275,13 @@ export async function logout() {
             <h2 className="text-2xl sm:text-3xl font-bold mt-8 mb-4">
               Solutions for Separate Backends
             </h2>
-            <h3 className="text-xl sm:text-2xl font-semibold mb-2">
+            Authorizing user session from Client side in Next.js and sending
+            token with fetch request to receive data in client side is crucial
+            for authorizing the user. But, points we need to consider are that
+            we are not able to send the cookie from Next.js to express backend
+            with fetch requests even after inlcuding the credentials. I will
+            tell you the solution for this below.
+            <h3 className="text-xl sm:text-2xl font-semibold my-2">
               Handling Client-Side Authentication:
             </h3>
             <ol className="list-decimal pl-6 mb-4 space-y-2">
@@ -276,7 +300,14 @@ export async function logout() {
                 token in headers to the Express backend for verification.
               </li>
             </ol>
-
+            You can consider the above{" "}
+            <Link
+              href="/blogs/nextjs-with-nodejs-auth-guide#apiproxy"
+              className="underline"
+            >
+              code
+            </Link>
+            &nbsp;I have already provided for implementing API Proxy.
             <h3 className="text-xl sm:text-2xl font-semibold mt-6 mb-2">
               Handling Server-Side Authentication:
             </h3>
@@ -285,7 +316,6 @@ export async function logout() {
               include cookies in the fetch request headers using functions like
               `getToken()`.
             </p>
-
             <Card className="my-6 p-4 bg-muted overflow-hidden">
               <SyntaxHighlighter
                 language="javascript"
@@ -301,7 +331,6 @@ export async function getToken() {
 }`}
               </SyntaxHighlighter>
             </Card>
-
             <h3 className="text-xl sm:text-2xl font-semibold mt-6 mb-2">
               Best Practices
             </h3>
