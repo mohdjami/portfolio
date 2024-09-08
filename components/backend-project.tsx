@@ -29,6 +29,13 @@ export async function BackendProjects() {
     });
 
     return (
+      <section className="lg:m-32 m-10" id="front-end">
+      {" "}
+      <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
+        <div className="text-black lg:mt-10 font-bold font-sans lg:text-4xl dark:text-white">
+          FRONTEND PROJECTS
+        </div>
+      </div>
       <BentoGrid>
         {itemss.map((item: any, index: number) => (
           <BentoGridItem
@@ -43,6 +50,7 @@ export async function BackendProjects() {
           />
         ))}
       </BentoGrid>
+      </section>
     );
   } catch (error) {
     console.error("Error fetching backend projects:", error);

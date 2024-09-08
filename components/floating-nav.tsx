@@ -106,7 +106,7 @@ export const FloatingNav = ({
               </div>
             </MenuItem>{" "}
           </Link>
-          <Link href="/blogs">
+          <Link href="/blog">
             <MenuItem setActive={setActive} active={active} item="Blogs">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/blogs/#inter-exp">

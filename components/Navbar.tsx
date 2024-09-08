@@ -42,16 +42,16 @@ export function Navbar({ className }: { className?: string }) {
         </MenuItem>{" "}
         <MenuItem setActive={setActive} active={active} item="Blogs">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/blogs/#inter-exp">
+            <HoveredLink href="/blog/#inter-exp">
               First Interview Experience
             </HoveredLink>
-            <HoveredLink href="/blogs/#scaling-app">
+            <HoveredLink href="/blog/#scaling-app">
               Scaling an Application
             </HoveredLink>
-            <HoveredLink href="/blogs/#chat-app">
+            <HoveredLink href="/blog/#chat-app">
               Building Real time Chat App
             </HoveredLink>
-            <HoveredLink href="/blogs/#nextjs">
+            <HoveredLink href="/blog/#nextjs">
               Nextjs as a Full Stack Framework
             </HoveredLink>
           </div>
