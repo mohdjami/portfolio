@@ -13,28 +13,8 @@ import Link from "next/link";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { TracingBeam, TracingBeam2 } from "./ui/tracing-beam";
 import Image from "next/image";
-import Sidebar from "./Sidebar";
 
 export function Hero() {
-  const blogs = [
-    {
-      title: "First Interview Experience ",
-      description: "This blog is about my first interview experience.",
-      link: "/blog",
-    },
-    {
-      title: "How to build a Scalable Application",
-      description:
-        "In this blog, I will show you how to build a scalable application with Next.js and Node.js.",
-      date: "2021-10-10",
-    },
-    {
-      title: "Building a Scalable Real Time Chat App",
-      description:
-        "In this blog, I will show you how to build a scalable real-time chat app with Next.js and Node.js.",
-    },
-  ];
-  const projectsSentence = `To explore all my stunning Projects`;
   const words = [
     {
       text: "I",
@@ -91,9 +71,7 @@ export function Hero() {
   ];
   return (
     <main className="mt-32">
-      {" "}
-      <TracingBeam2>
-        <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5">
+            <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5">
           <div className="h-auto w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="font-bold font-sans text- md:text-4xl lg:text-4xl dark:text-neutral-200   h-[250px]">
               <TypewriterEffect words={words} className="text-left text-2xl" />
@@ -194,7 +172,6 @@ export function Hero() {
             </Link>
           </div>
         </section>
-      </TracingBeam2>
     </main>
   );
 }

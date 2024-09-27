@@ -24,7 +24,7 @@ const projects = [
     title: "RealChat-Scalable-WebSockets",
     description: `Built a Highl Scalable Real Time communication and Chat Application using Nodejs and Next.js.`,
 
-    link: "https://github.com/mohdjami/RealChat-Scalable-WebSocke",
+    link: "https://github.com/mohdjami/RealChat-Scalable-WebSockets",
   },
   //   {
   //     title: "Tour and Travelling App(backend+frontend)",

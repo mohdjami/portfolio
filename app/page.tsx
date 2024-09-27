@@ -1,10 +1,10 @@
 import { Hero } from "@/components/Hero";
-import Image from "next/image";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function Home() {
   return (
-    <>
+    <TracingBeam>
       <Hero />
-    </>
+    </TracingBeam>
   );
 }

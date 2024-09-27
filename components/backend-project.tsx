@@ -33,10 +33,10 @@ export async function BackendProjects() {
         {" "}
         <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
           <div className="text-black lg:mt-10 font-bold font-sans lg:text-4xl dark:text-white">
-            FRONTEND PROJECTS
+            BACKEND PROJECTS
           </div>
         </div>
-        <BentoGrid>
+        <BentoGrid className="max-w-4xl m-10 mx-auto">
           {itemss.map((item: any, index: number) => (
             <BentoGridItem
               key={index}
