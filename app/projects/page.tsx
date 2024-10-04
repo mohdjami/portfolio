@@ -28,6 +28,40 @@ const Hello = () => {
             Selection of My Favourite Projects
           </div>
           <div className="grid lg:grid-cols-2">
+            {" "}
+            <div className="h-[40rem] w-[320px] lg:w-full flex items-center justify-center">
+              <Link
+                className="rounded-lg  bg-black m-10"
+                href="https://travel-three-lovat.vercel.app"
+              >
+                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[30rem] lg:h-[20rem] ">
+                  <h3 className="max-w-xs !pb-2 !m-0 font-bold  lg:text-base text-slate-100">
+                    URL Shortener
+                  </h3>
+                  <div className=" text-xs lg:text-base !m-0 !p-0 font-normal">
+                    <span className="text-slate-500 ">
+                      Travel Itinerary Generator built with Nextjs, Supabase,
+                      Google gemini-1.5-flash.
+                    </span>
+                  </div>
+                  <div className="flex flex-1 w-full rounded-lg mt-4 " />
+                  <Image
+                    src="/travelai.png"
+                    alt="AI Travel Itinerary"
+                    width={500}
+                    height={500}
+                    className="hidden lg:block"
+                  />
+                  <Image
+                    src="/travelai.png"
+                    alt="AI Travel Itinerary"
+                    width={300}
+                    height={300}
+                    className="lg:hidden"
+                  />
+                </div>
+              </Link>
+            </div>
             <div className="h-[40rem] w-[320px] lg:w-full flex items-center justify-center">
               <Link
                 className="rounded-lg  bg-black m-10"
