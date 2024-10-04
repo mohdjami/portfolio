@@ -36,7 +36,7 @@ const Hello = () => {
               >
                 <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[30rem] lg:h-[20rem] ">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  lg:text-base text-slate-100">
-                    URL Shortener
+                    TravelPlan AI
                   </h3>
                   <div className=" text-xs lg:text-base !m-0 !p-0 font-normal">
                     <span className="text-slate-500 ">
