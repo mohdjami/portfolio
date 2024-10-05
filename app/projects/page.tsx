@@ -69,24 +69,24 @@ const Hello = () => {
               >
                 <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[200px] lg:w-[20rem] h-[30rem] lg:h-[20rem] ">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold  lg:text-base text-slate-100">
-                    URL Shortener
+                    URL Manager
                   </h3>
                   <div className=" text-xs lg:text-base !m-0 !p-0 font-normal">
                     <span className="text-slate-500 ">
-                      Highly Scalable URL Shortener with Nextjs, Redis, Kafka.
+                      Highly Scalable URL Manager with Nextjs, Redis, Kafka.
                     </span>
                   </div>
                   <div className="flex flex-1 w-full rounded-lg mt-4 " />
                   <Image
                     src="/url.png"
-                    alt="My URL shortener Website"
+                    alt="My URL Manager Website"
                     width={500}
                     height={500}
                     className="hidden lg:block"
                   />
                   <Image
                     src="/urlph.png"
-                    alt="My URL shortener Website"
+                    alt="My URL Manager Website"
                     width={300}
                     height={300}
                     className="lg:hidden"
@@ -149,7 +149,7 @@ const Hello = () => {
                   <div className="flex flex-1 w-full rounded-lg mt-4 " />
                   <Image
                     src="/nextauth.png"
-                    alt="My nextauth shortener Website"
+                    alt="My nextauth Manager Website"
                     width={400}
                     height={400}
                     className="hidden lg:block"
@@ -184,7 +184,7 @@ const Hello = () => {
                   <div className="flex flex-1 w-full rounded-lg mt-4 " />
                   <Image
                     src="/port.png"
-                    alt="My nextauth shortener Website"
+                    alt="My nextauth Manager Website"
                     width={500}
                     height={500}
                     className="hidden lg:block"
