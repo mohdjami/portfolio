@@ -53,7 +53,7 @@ const Hello = () => {
                     className="hidden lg:block"
                   />
                   <Image
-                    src="/travelai.png"
+                    src="/image.png"
                     alt="AI Travel Itinerary"
                     width={300}
                     height={300}

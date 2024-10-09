@@ -9,10 +9,10 @@ export function ProjectCards() {
 }
 const projects = [
   {
-    title: "Habit Tracker",
+    title: "URL Manager",
     description:
-      "Habit-Tracker is an open-source habit tracking app that lets you track daily habits and monitor your activity streaks and progress with little effort.",
-    link: "https://habit-tracker-jami.vercel.app",
+      "URL Manager is an open-source URL managing app which help you to manage your URLs at one place, keep track and monitor your URLs, it does it by shortening the url which you can share, and keep track of it;t.",
+    link: "https://mjkm.vercel.app.vercel.app",
   },
   {
     title: "Authentication Starter Template",
