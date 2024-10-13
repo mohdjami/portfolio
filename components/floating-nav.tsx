@@ -109,8 +109,8 @@ export const FloatingNav = ({
           <Link href="/blog">
             <MenuItem setActive={setActive} active={active} item="Blogs">
               <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/blogs/#inter-exp">
-                  First Interview Experience
+                <HoveredLink href="/blog/1">
+                  Seamless Authentication Nextjs + Express
                 </HoveredLink>
                 <HoveredLink href="/blogs/#scaling-app">
                   Scaling an Application

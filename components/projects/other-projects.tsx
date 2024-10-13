@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -10,7 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import { motion } from "framer-motion";
 
 export function OtherProjects() {
@@ -48,7 +48,7 @@ const items = [
     title: "URL Shortener",
     description:
       "Created a lightning fast URL Shortener with Nextjs and implemented caching using Redis and Message queues Kafka for asynchronously sending E-mails.",
-    image: "/url.png",
+    image: "url.png",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/url-shortener",
     tech: "Nextjs, Redis, Kafka, Prisma, Postgres, Typescript",
@@ -88,7 +88,7 @@ const items = [
     title: "Chat Room",
     description:
       "Asynchronous Web Socket Chat application Built using Django Framework.",
-    image: "/chatroom.png",
+    image: "chatroom.png",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/Chat-Room",
     tech: "Python, Django, Sql, WebSockets",

@@ -1,16 +1,13 @@
 import { cn } from "@/utils/cn";
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import { motion } from "framer-motion";
 
 export function FrontendProjects() {
@@ -48,7 +45,7 @@ const items = [
     title: "URL Shortener",
     description:
       "Created a lightning fast URL Shortener with Nextjs and implemented caching using Redis and Message queues Kafka for asynchronously sending E-mails.",
-    image: "/url.png",
+    image: "url.png",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/url-shortener",
     tech: "Nextjs, Redis, Kafka, Prisma, Postgres, Typescript",
@@ -58,7 +55,7 @@ const items = [
     title: "Habit Tracker",
     description:
       "Monitor your activities, streaks, and progress with little effort. Integrate statistics to your life! ",
-    image: "/Screenshot 2024-02-15 211545.png",
+    image: "Screenshot 2024-02-15 211545.png",
     header: <Skeleton />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/habit-tracker-app",
@@ -68,7 +65,7 @@ const items = [
   {
     title: "My Portfolio",
     description: "This project is currently in building phase.",
-    image: "/port.png",
+    image: "port.png",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/portfolio",
     tech: "Nextjs, Shadcn-ui, Tailwind css",
@@ -77,7 +74,7 @@ const items = [
   {
     title: "Card Solution",
     description: "A landing page for ModeUI application and an Admin Panel.",
-    image: "/cardsol.png",
+    image: "card/image.png",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/card-solution-frontend",
     tech: "Nextjs, Shadcn-ui, Tailwind css",
@@ -88,7 +85,7 @@ const items = [
     description:
       "With our app, you can explore new music, create playlists, and share your favourite tunes with friends. Get started today!  ",
     header: <Skeleton />,
-    image: "/fav.png",
+    image: "Screenshot 2024-04-18 160305.png",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     github: "https://github.com/mohdjami/favourite-tunes",
     tech: "Next.js, Nodejs, Postgres, Prisma ",

@@ -1,4 +1,4 @@
-import { FullstackProjects } from "@/components/full-stack-projects";
+import { FullstackProjects } from "@/components/projects/full-stack-projects";
 import React from "react";
 
 const FullStackPro = () => {

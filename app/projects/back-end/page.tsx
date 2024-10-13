@@ -1,4 +1,4 @@
-import { BackendProjects } from "@/components/backend-project";
+import { BackendProjects } from "@/components/projects/backend-project";
 import React from "react";
 
 const Backend = () => {

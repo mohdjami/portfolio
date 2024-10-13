@@ -1,6 +1,6 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Card } from "@/components/ui/card";
+import { Card } from "@/components/projects/card";
 import { Badge } from "@/components/ui/badge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import Link from "next/link";
@@ -301,10 +301,7 @@ export async function logout() {
               </li>
             </ol>
             You can consider the above{" "}
-            <Link
-              href="/blogs/nextjs-with-nodejs-auth-guide#apiproxy"
-              className="underline"
-            >
+            <Link href="/blog/1#apiproxy" className="underline">
               code
             </Link>
             &nbsp;I have already provided for implementing API Proxy.

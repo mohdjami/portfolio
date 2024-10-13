@@ -1,4 +1,4 @@
-import { OtherProjects } from "@/components/other-projects";
+import { OtherProjects } from "@/components/projects/other-projects";
 import React from "react";
 
 const Other = () => {

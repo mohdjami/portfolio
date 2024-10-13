@@ -1,4 +1,4 @@
-import { FrontendProjects } from "@/components/front-end-projects";
+import { FrontendProjects } from "@/components/projects/front-end-projects";
 import React from "react";
 
 const Frontend = () => {

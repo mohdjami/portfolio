@@ -1,6 +1,6 @@
 import React from "react";
 import { EvervaultCard, Icon } from "./ui/evervault-card";
-import { Card } from "./ui/card";
+import { Card } from "./projects/card";
 interface Blog {
   title: string;
   description: string;

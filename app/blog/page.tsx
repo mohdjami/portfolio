@@ -5,7 +5,7 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/components/ui/card";
+} from "@/components/projects/card";
 import { Badge } from "@/components/ui/badge";
 
 // This would typically come from your CMS or API
@@ -17,7 +17,7 @@ const blogPosts = [
     date: "2024-09-5",
     excerpt:
       "Learn how to implement full Authentication and Authorization using jwt and httpOnly cookies with Next.js server and client components and Express.js Backend.",
-    slug: "nextjs-with-nodejs-auth-guide",
+    slug: "1",
     category: "React",
   },
   {

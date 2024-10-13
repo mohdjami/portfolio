@@ -13,6 +13,7 @@ import Link from "next/link";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { TracingBeam, TracingBeam2 } from "./ui/tracing-beam";
 import Image from "next/image";
+import { WobbleProjectCard } from "./wobble-projects";
 
 export function Hero() {
   const words = [
@@ -155,6 +156,7 @@ export function Hero() {
         </div>
 
         <ProjectCards />
+        {/* <WobbleProjectCard /> */}
         <div className="flex mt-10 lg:space-x-10 justify-center items-center">
           <Link
             href="/projects"

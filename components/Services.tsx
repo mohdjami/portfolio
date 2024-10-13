@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/components/projects/card";
 import { Badge } from "@/components/ui/badge";
 import { CodeIcon, GlobeIcon, SearchIcon, BookOpenIcon } from "lucide-react";
 
