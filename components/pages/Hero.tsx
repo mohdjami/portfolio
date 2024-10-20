@@ -1,19 +1,19 @@
 "use client";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import { motion } from "framer-motion";
 import React from "react";
-import { AuroraBackground } from "./ui/aurora-background";
-import { SparklesCore } from "./ui/sparkles";
+import { AuroraBackground } from "../ui/aurora-background";
+import { SparklesCore } from "../ui/sparkles";
 import { ArrowBigLeft, ArrowBigRight, Github, Linkedin } from "lucide-react";
-import { TypewriterEffect } from "./ui/typewriter-effect";
-import { Blogs } from "./blogs-card";
-import { ProjectCards } from "./project-card";
-import { TextGenerateEffect } from "./text-generate-effect";
+import { TypewriterEffect } from "../ui/typewriter-effect";
+import { Blogs } from "../blogs-card";
+import { ProjectCards } from "../project-card";
+import { TextGenerateEffect } from "../text-generate-effect";
 import Link from "next/link";
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
-import { TracingBeam, TracingBeam2 } from "./ui/tracing-beam";
+import { TracingBeam, TracingBeam2 } from "../ui/tracing-beam";
 import Image from "next/image";
-import { WobbleProjectCard } from "./wobble-projects";
+import { WobbleProjectCard } from "../wobble-projects";
 
 export function Hero() {
   const words = [
@@ -72,7 +72,7 @@ export function Hero() {
   ];
   return (
     <main className="mt-32">
-      <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5">
+      <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5" id="me">
         <div className="h-auto w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
           <div className="font-bold font-sans text- md:text-4xl lg:text-4xl dark:text-neutral-200   h-[250px]">
             <TypewriterEffect words={words} className="text-left text-2xl" />
@@ -150,7 +150,7 @@ export function Hero() {
         </section> */}
       {/* <section className="grid lg:grid-cols-2 mx-16 lg:mt-20 lg:gap-5">
                 <section className="m-20 items-start grid justify-center"> */}
-      <section className="m-16 items-start grid ">
+      <section className="m-16 items-start grid " id="oss">
         <div className="text-lg text-center bg-transparent md:text-lg  lg:text-3xl font-bold border border-slate-800 text-neutral-700 dark:text-white max-w-7xl leading-relaxed lg:leading-snug lg:my-20 lg:py-6">
           Some of my Open Source Project to get started with!
         </div>

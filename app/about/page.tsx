@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutPage } from "@/components/about-page";
+import { AboutPage } from "@/components/pages/about-page";
 const Page = () => {
   return (
     <main className="">

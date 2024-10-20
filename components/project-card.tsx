@@ -11,7 +11,7 @@ const projects = [
   {
     title: "URL Manager",
     description:
-      "URL Manager is an open-source URL managing app which help you to manage your URLs at one place, keep track and monitor your URLs, it does it by shortening the url which you can share, and keep track of it;t.",
+      "URL Manager is an open-source URL managing app which help you to manage your URLs at one place, keep track and monitor your URLs, it does it by shortening the url which you can share, and keep track of it.",
     link: "https://mjkm.vercel.app.vercel.app",
   },
   {

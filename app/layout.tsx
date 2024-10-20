@@ -5,7 +5,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
-import About from "@/components/About";
+import About from "@/components/pages/About";
 import { FloatingNav } from "@/components/floating-nav";
 import Sidebar from "@/components/Sidebar";
 import Head from "next/head";

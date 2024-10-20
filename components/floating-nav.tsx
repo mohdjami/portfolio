@@ -64,17 +64,31 @@ export const FloatingNav = ({
         <Menu setActive={setActive}>
           <Link
             href="/"
-            className="hover:bg-black lg:p-2 rounded-sm lg:text-l text-sm"
+            className="hover:bg-black rounded-sm lg:text-l hover:text-white text-sm"
           >
-            Home
+            <MenuItem setActive={setActive} active={active} item="Home">
+              <div className="flex flex-col space-y-4 text-sm">
+                <HoveredLink href="/#me">About me</HoveredLink>
+                <HoveredLink href="/#oss">Open Source Projects</HoveredLink>
+              </div>
+            </MenuItem>
           </Link>{" "}
           <Link
             href="/about"
-            className="hover:bg-black lg:p-2 rounded-sm text-sm lg:text-l"
+            className="hover:bg-black rounded-sm lg:text-l hover:text-white text-sm"
           >
-            About
+            <MenuItem setActive={setActive} active={active} item="About">
+              <div className="flex flex-col space-y-4 text-sm">
+                <HoveredLink href="/about/#">Frontend</HoveredLink>
+                <HoveredLink href="/about/#">Backend</HoveredLink>
+              </div>
+            </MenuItem>{" "}
+            {/* About */}
           </Link>
-          <Link href="/services">
+          <Link
+            href="/services"
+            className="hover:bg-black rounded-sm lg:text-l hover:text-white text-sm"
+          >
             <MenuItem setActive={setActive} active={active} item="Services">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -88,7 +102,10 @@ export const FloatingNav = ({
               </div>
             </MenuItem>{" "}
           </Link>
-          <Link href="/projects">
+          <Link
+            href="/projects"
+            className="hover:bg-black rounded-sm lg:text-l hover:text-white text-sm"
+          >
             <MenuItem setActive={setActive} active={active} item="Projects">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/projects/back-end">
@@ -106,13 +123,16 @@ export const FloatingNav = ({
               </div>
             </MenuItem>{" "}
           </Link>
-          <Link href="/blog">
+          <Link
+            href="/blog"
+            className="hover:bg-black rounded-sm lg:text-l hover:text-white text-sm"
+          >
             <MenuItem setActive={setActive} active={active} item="Blogs">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/blog/1">
                   Seamless Authentication Nextjs + Express
                 </HoveredLink>
-                <HoveredLink href="/blogs/#scaling-app">
+                {/* <HoveredLink href="/blogs/#scaling-app">
                   Scaling an Application
                 </HoveredLink>
                 <HoveredLink href="/blogs/#chat-app">
@@ -120,7 +140,7 @@ export const FloatingNav = ({
                 </HoveredLink>
                 <HoveredLink href="/blogs/#nextjs">
                   Nextjs as a Full Stack Framework
-                </HoveredLink>
+                </HoveredLink> */}
               </div>
             </MenuItem>
           </Link>
