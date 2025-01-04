@@ -47,6 +47,9 @@ importers:
       mini-svg-data-uri:
         specifier: ^1.4.4
         version: 1.4.4
+      motion:
+        specifier: ^11.15.0
+        version: 11.15.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: 14.2.1
         version: 14.2.1(@babel/core@7.25.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -62,6 +65,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      react-icon-cloud:
+        specifier: ^4.1.6
+        version: 4.1.6(react@18.3.1)
       react-icons:
         specifier: ^5.3.0
         version: 5.3.0(react@18.3.1)
@@ -244,6 +250,10 @@ packages:
 
   '@corex/deepmerge@4.0.43':
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
+
+  '@csstools/convert-colors@2.0.0':
+    resolution: {integrity: sha512-P7BVvddsP2Wl5v3drJ3ArzpdfXMqoZ/oHOV/yFiGFb3JQr9Z9UXZ9tnHAKJsO89lfprR1F9ExW3Yij21EjEBIA==}
+    engines: {node: '>=6.0.0'}
 
   '@eslint-community/eslint-utils@4.4.0':
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -1304,6 +1314,20 @@ packages:
       react-dom:
         optional: true
 
+  framer-motion@11.15.0:
+    resolution: {integrity: sha512-MLk8IvZntxOMg7lDBLw2qgTHHv664bYoYmnFTmE0Gm/FW67aOJk0WM3ctMcG+Xhcv+vh5uyyXwxvxhSeJzSe+w==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   fs-extra@11.2.0:
     resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
@@ -1793,6 +1817,26 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  motion-dom@11.14.3:
+    resolution: {integrity: sha512-lW+D2wBy5vxLJi6aCP0xyxTxlTfiu+b+zcpVbGVFUxotwThqhdpPRSmX8xztAgtZMPMeU0WGVn/k1w4I+TbPqA==}
+
+  motion-utils@11.14.3:
+    resolution: {integrity: sha512-Xg+8xnqIJTpr0L/cidfTTBFkvRw26ZtGGuIhA94J9PQ2p4mEa06Xx7QVYZH0BP+EpMSaDlu+q0I0mmvwADPsaQ==}
+
+  motion@11.15.0:
+    resolution: {integrity: sha512-iZ7dwADQJWGsqsSkBhNHdI2LyYWU+hA1Nhy357wCLZq1yHxGImgt3l7Yv0HT/WOskcYDq9nxdedyl4zUv7UFFw==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -2078,6 +2122,12 @@ packages:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
       react: ^18.3.1
+
+  react-icon-cloud@4.1.6:
+    resolution: {integrity: sha512-M19XUQjGpQQZD3kVQ8YxbMhM33Yx4vQFUPEurN2CajrzzUcoyiPqJnKDgCCkkL4nd3hemB4PgK2LVsHwEkFKdg==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      react: '>=16'
 
   react-icons@5.3.0:
     resolution: {integrity: sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==}
@@ -2693,6 +2743,8 @@ snapshots:
       to-fast-properties: 2.0.0
 
   '@corex/deepmerge@4.0.43': {}
+
+  '@csstools/convert-colors@2.0.0': {}
 
   '@eslint-community/eslint-utils@4.4.0(eslint@8.57.1)':
     dependencies:
@@ -3682,7 +3734,7 @@ snapshots:
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.0(eslint@8.57.1)
       eslint-plugin-react: 7.37.1(eslint@8.57.1)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.57.1)
@@ -3707,20 +3759,20 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
       is-glob: 4.0.3
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-node
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -3731,7 +3783,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -3742,7 +3794,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -3961,6 +4013,15 @@ snapshots:
 
   framer-motion@11.11.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
+      tslib: 2.7.0
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  framer-motion@11.15.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      motion-dom: 11.14.3
+      motion-utils: 11.14.3
       tslib: 2.7.0
     optionalDependencies:
       react: 18.3.1
@@ -4433,6 +4494,18 @@ snapshots:
 
   mkdirp@2.1.6: {}
 
+  motion-dom@11.14.3: {}
+
+  motion-utils@11.14.3: {}
+
+  motion@11.15.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      framer-motion: 11.15.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tslib: 2.7.0
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   ms@2.1.3: {}
 
   mz@2.7.0:
@@ -4715,6 +4788,11 @@ snapshots:
       loose-envify: 1.4.0
       react: 18.3.1
       scheduler: 0.23.2
+
+  react-icon-cloud@4.1.6(react@18.3.1):
+    dependencies:
+      '@csstools/convert-colors': 2.0.0
+      react: 18.3.1
 
   react-icons@5.3.0(react@18.3.1):
     dependencies:
