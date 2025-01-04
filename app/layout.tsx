@@ -53,14 +53,14 @@ export default function RootLayout({
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://mohdjami.me" />
-          <meta property="og:image" content="https://mohdjami.me/jami.jpg" />
+          <meta property="og:image" content="https://mohdjami.me/me.jpeg" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Mohd Jami Portfolio" />
           <meta
             name="twitter:description"
             content="Mohd Jami Portfolio made using Next.js"
           />
-          <meta name="twitter:image" content="https://mohdjami.me/jami.jpg" />
+          <meta name="twitter:image" content="https://mohdjami.me/me.jpeg" />
           <link rel="canonical" href="https://mohdjami.me" />
         </Head>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
