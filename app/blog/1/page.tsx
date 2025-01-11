@@ -1,11 +1,10 @@
 import NextNodeAuth from "@/components/next-node-auth";
 
-const page = () => {
+export default function NextNodeAuthPage() {
   return (
-    <main className="px-8 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:m-32 mt-28">
+    <main className="min-h-screen bg-background">
       <NextNodeAuth />
     </main>
   );
-};
+}
 
-export default page;
