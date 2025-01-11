@@ -1,8 +1,10 @@
 import Services from "@/components/Services";
-import React from "react";
 
-const page = () => {
-  return <Services />;
-};
+export default function ServicesPage() {
+  return (
+    <main className="min-h-screen bg-background">
+      <Services />
+    </main>
+  );
+}
 
-export default page;
