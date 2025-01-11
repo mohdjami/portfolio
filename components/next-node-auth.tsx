@@ -176,7 +176,7 @@ export default function NextNodeAuth() {
                 <strong>Separate Backend Communication</strong>: We will discuss the challenges of authenticating requests from a separate Express backend to a Next.js application. The challenge lies in managing cookie-based authentication across client-side and server-side boundaries, as cookies may not be automatically passed in certain requests.
               </li>
               <li>
-                <strong>API Proxies</strong>: API proxies work by creating a middle layer that allows Next.js to intercept and forward requests to the backend. This ensures that cookies are correctly attached and sent with the request, as the proxy route runs within the same origin. We'll explore the concept of API proxies as a solution for handling authentication when making requests to external services from client Components.
+                <strong>API Proxies</strong>: API proxies work by creating a middle layer that allows Next.js to intercept and forward requests to the backend. This ensures that cookies are correctly attached and sent with the request, as the proxy route runs within the same origin. We&apos;ll explore the concept of API proxies as a solution for handling authentication when making requests to external services from client Components.
               </li>
             </ul>
 
@@ -235,7 +235,7 @@ export async function logout() {
             </h3>
             <ul className="list-disc pl-6 mb-4 space-y-2">
               <li>
-                <strong>Cookie Accessibility</strong>: Cookies are not automatically sent with requests from Next.js to an external service. This makes it difficult for the backend to verify the request without the token. But if you are sending request to route handlers within the same Next.js server from client components, you don&apos;t face this problem. As cookies are httpOnly, you can&apos;t excess cookies in any way in client side, so you won't be explicitly able to send them too.
+                <strong>Cookie Accessibility</strong>: Cookies are not automatically sent with requests from Next.js to an external service. This makes it difficult for the backend to verify the request without the token. But if you are sending request to route handlers within the same Next.js server from client components, you don&apos;t face this problem. As cookies are httpOnly, you can&apos;t excess cookies in any way in client side, so you won&apos;t be explicitly able to send them too.
               </li>
               <li>
                 <strong>Server-Side Component Requests</strong>: When making requests from server-side components using fetch, cookies are not automatically included in the request headers, as we discussed above. For this, you need to explicitly put the cookies in request headers. We will talk about this in a later section.
