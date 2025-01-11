@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from '@/lib/utils';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 interface SubItem {
   name: string;
@@ -64,7 +65,10 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems, className = 
       <div className="max-w-screen-xl mx-auto">
         <div className="relative flex items-center justify-between px-4 py-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-full shadow-lg border border-gray-200 dark:border-gray-700">
           {/* Logo or Brand */}
-          <div className="text-lg font-semibold">Logo</div>
+          <Avatar>
+        <AvatarImage src='/me.jpeg' alt="Jami" />
+        <AvatarFallback>MJ</AvatarFallback>
+      </Avatar>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
