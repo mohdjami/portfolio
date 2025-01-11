@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {  IconsCloudSkills } from "../icon-cloud-skills";
 import { WorkExperience } from "../work-experience";
+import { motion } from "framer-motion";
 
 export function Hero() {
   const words = [
@@ -64,7 +65,7 @@ export function Hero() {
   ];
 
   return (
-    <main className="mt-20 md:mt-32">
+    <main className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
       <section className="grid lg:grid-cols-2 mx-4 md:mx-16 lg:mt-20 lg:gap-5" id="me">
         <div className="h-auto w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
           <div className="font-bold font-sans text-xl md:text-4xl lg:text-4xl dark:text-neutral-200">
@@ -80,18 +81,25 @@ export function Hero() {
 
         <div className="hidden lg:h-auto w-full mb-10 bg-transparent gap-10 lg:flex flex-col items-center justify-center overflow-hidden rounded-md">
           <div className="relative w-[250px] md:w-[300px] h-[250px] md:h-[300px]">
-            <div className="rounded-full p-1">
-              <Image
-                src="/me.jpeg"
-                alt="Mohd Jami"
-                width={600}
-                height={600}
-                className="rounded-full"
-                priority
-              />
-            </div>
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="relative w-full aspect-square max-w-md mx-auto"
+          >
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 blur-3xl opacity-20" />
+            <Image
+              src="/me.jpeg"
+              alt="Mohd Jami"
+              width={400}
+              height={400}
+              className="rounded-full relative z-10 object-cover p-2"
+              priority
+            />
+          </motion.div>
           </div>
         </div>
+        
 
         <div className="mt-10 flex lg:hidden lg:h-auto w-full mb-2 bg-transparent gap-10 items-center justify-center overflow-hidden rounded-md">
           <div className="relative w-[200px] sm:w-[250px] md:w-[300px] h-[200px] sm:h-[250px] md:h-[300px]">
@@ -119,24 +127,24 @@ export function Hero() {
           </Link>
         </div>
         <div className="hidden lg:flex space-x-6 mr-[170px]">
-          <label className="px-6 md:px-8 py-2 rounded-md bg-white text-slate-800 font-bold transition duration-200 border-2 border-transparent">
+           <span className="px-6 md:px-8 py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold transition duration-200 border-2 border-transparent hover:border-blue-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Mohd Jami
-          </label>
+          </span>
         </div>
       </div>
 
       <div className="lg:hidden flex justify-center items-center space-x-3 mt-4">
-        <label className="px-6 md:px-8 py-2 rounded-md bg-white text-slate-800 font-bold transition duration-200 border-2 border-transparent">
-          Mohd Jami
-        </label>
-      </div>
+      <span className="px-6 md:px-8 py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold transition duration-200 border-2 border-transparent hover:border-blue-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Mohd Jami
+          </span>
+                </div>
 
       <section className="mt-10">
       <WorkExperience />
       </section>
 
-      <section className="flex flex-col justify-center items-center mt-16">  
-        <div className="text-base md:text-lg lg:text-3xl font-bold border border-slate-800 text-neutral-700 dark:text-white w-full max-w-7xl leading-relaxed text-center p-4 mx-4 lg:py-6 lg:px-10">
+      <section className="flex flex-col justify-center items-center my-10 md:my-20 px-4 md:px-6 lg:px-8">
+      <div className="text-base md:text-lg lg:text-3xl font-bold border border-slate-800 text-neutral-700 dark:text-white w-full max-w-7xl leading-relaxed text-center p-4 mx-4 lg:py-6 lg:px-10">
           My skillset
         </div>
         <div className="w-full max-w-7xl px-4 md:px-0 flex justify-center">
