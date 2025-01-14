@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 export function FrontendProjects() {
   return (
-    <section className="lg:m-32 m-10" id="front-end">
+    <section className="m-10" id="front-end">
       {" "}
       <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="text-black lg:mt-10 font-bold font-sans lg:text-4xl dark:text-white">
